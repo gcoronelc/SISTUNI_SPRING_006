@@ -1,4 +1,4 @@
-![Spring Framework](https://raw.githubusercontent.com/gcoronelc/SISTUNI_SPRING_006/master/Spring06.jpg)
+![Spring Framework](https://raw.githubusercontent.com/gcoronelc/SISTUNI_SPRING_006/master/Spring06B.jpg)
 
 
 # DATOS GENERALES
