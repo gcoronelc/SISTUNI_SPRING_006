@@ -1,0 +1,6 @@
+CLASE 01
+======================================
+1.- Repositorio GitHub
+2.- Instalación de GIT 
+3.- Clonacion y actualización del reposiotiro
+4.- 
