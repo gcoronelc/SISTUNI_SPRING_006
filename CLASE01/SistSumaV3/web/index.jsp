@@ -5,7 +5,6 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@taglib   prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
    <head>
@@ -14,7 +13,7 @@
    </head>
    <body>
       <h1>SUMAR</h1>
-       <form method="post" action="MateRestar">
+      <form id="form1">
           <table>
              <tr>
                 <td>Número 1: </td>
@@ -25,26 +24,46 @@
                 <td><input type="text" name="num2"/></td>
              </tr>
              <tr>
-                <td colspan="2"><input type="submit" value="Procesar"/></td>
+                <td colspan="2"><input type="button" id="btnProcesar" value="Procesar"/></td>
              </tr>
           </table>
        </form>
-       <c:if test="${suma != null}">
+      <div id="divReporte" style="display: none;">
          <h1>REPORTE</h1>
          <table>
              <tr>
                 <td>Número 1: </td>
-                <td>${num1}</td>
+                <td><span id="rptaNum1"></span></td>
              </tr>
              <tr>
                 <td>Número 2: </td>
-                <td>${num2}</td>
+                <td><span id="rptaNum2"></span></td>
              </tr>
              <tr>
                 <td>Suma: </td>
-                <td>${suma}</td>
+                <td><span id="rptaSuma"></span></td>
              </tr>
-          </table>
-      </c:if>
+         </table>
+      </div>
+      
+      <script src="jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
+      
+      <script>
+         
+         $("#btnProcesar").click(function(){
+            
+            var data = $("#form1").serialize();
+            $.post("MateSumar", data, function(objeto){
+               
+               $("#rptaNum1").html(objeto.num1);
+               $("#rptaNum2").html(objeto.num2);
+               $("#rptaSuma").html(objeto.suma);
+               
+               $("#divReporte").show();
+            });
+            
+         });
+         
+      </script>
    </body>
 </html>
