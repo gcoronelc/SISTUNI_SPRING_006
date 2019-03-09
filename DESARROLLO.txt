@@ -5,3 +5,6 @@ CLASE 01
 3.- Clonacion y actualización del reposiotiro
 4.- Introducción a Java Web
 5.- Caso: Sumar dos Números
+6.- Patron DI
+7.- Spring Core XML
+8.- Spring Core Anotaciones
