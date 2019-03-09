@@ -38,6 +38,7 @@
 - Introducción a Git: https://www.youtube.com/watch?v=zH3I1DZNovk
 - Curso de Git: https://youtu.be/NmbqlkLTOSI
 - Código Fuente: http://gcoronelc.blogspot.com/p/codigo-fuente.html
+- Java Web - Oracle: https://www.youtube.com/watch?v=HmXzOms6rvA&list=PLIRq7nByT7aTdpBXMuBjb-TL2kvrUpazI
 
 
 
