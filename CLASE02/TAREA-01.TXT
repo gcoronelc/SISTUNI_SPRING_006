@@ -1,0 +1,15 @@
+TAREA 01
+--------------------------------------------------
+
+Hacer una aplicación con Spring MVC que permita
+calcular el importe de una venta.
+
+DATOS DE ENTRADA
+- precio del producto
+- cantidad
+
+DATOS DE SALIDA
+- importe de la venta
+- impuesto 
+- total
+
