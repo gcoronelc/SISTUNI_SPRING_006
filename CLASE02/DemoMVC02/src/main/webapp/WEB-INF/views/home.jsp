@@ -9,7 +9,7 @@
 	
 	<!-- FORMULARIO DE DATOS -->
 	<h2>DATOS</h2>
-	<form method="post" action="sumar.ya1">
+	<form method="post" action="sumar.ya2">
 	 <table>
 	   <tr>
 	     <td>Número 1:</td>
