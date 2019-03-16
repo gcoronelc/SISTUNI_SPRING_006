@@ -13,19 +13,19 @@
    <table>
      <tr>
        <td>Nota 1:</td>
-       <td><input type="text" name="num1" /></td>
+       <td><input type="text" name="nota1" /></td>
      </tr>
      <tr>
        <td>Nota 2:</td>
-       <td><input type="text" name="num2" /></td>
+       <td><input type="text" name="nota2" /></td>
      </tr>
         <tr>
        <td>Nota 3:</td>
-       <td><input type="text" name="num3" /></td>
+       <td><input type="text" name="nota3" /></td>
      </tr>
         <tr>
        <td>Nota 4:</td>
-       <td><input type="text" name="num4" /></td>
+       <td><input type="text" name="nota4" /></td>
      </tr>
      
      
@@ -42,20 +42,20 @@
   <table>
     <tr>
       <td>NOTAS DE CICLO </td>
-      <td>${notas}</td>
+      <td></td>
     </tr>
     <tr>
       <td>NOTA ELIMINADA:</td>
-      <td>${notaEliminada}</td>
+      <td>${dto.menor}</td>
     </tr>
     <tr>
       <td>PROMEDIO</td>
-      <td>${promedio}</td>
+      <td>${dto.promedio}</td>
     </tr>
       
      <tr>
       <td>ESTADO </td>
-      <td>${estado}</td>
+      <td>${dto.estado}</td>
     </tr>
       
     

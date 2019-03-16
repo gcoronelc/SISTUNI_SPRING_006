@@ -1,53 +1,28 @@
 package pe.uni.demo03.service;
 
+import java.util.Arrays;
 import org.springframework.stereotype.Service;
-
-import pe.uni.demo03.bean.Notas;
+import pe.uni.demo03.bean.NotasDto;
 
 @Service
 public class MateService {
 	
-	public  Notas Promedio(int n1, int n2, int n3, int n4){
-	    
-	    Notas bean = new Notas();
-	    
-	    
-		int[] myList = {n1,n2,n3,n4};
+	public  NotasDto promediar(NotasDto dto){
+       
+		// Proceso
+		int[] myList = {dto.getNota1(), dto.getNota2(), dto.getNota3(), dto.getNota4()};
+		Arrays.sort(myList);
+		int menor = myList[0];
+		int suma = Arrays.stream(myList).sum();
+		int promedio=(suma - menor)/3;
+		String estado = (promedio>=14?"Aprobado":"Desaprobado");
 		
-		int i, min = n1;
- 
-		min=myList[0];
- 
-		for(i = 1; i < myList.length; i++)
-		{
-			if(min>myList[i])
-			{
-				min=myList[i];
-			}
-
-		}
-	    
+		// Reporte
+		dto.setMenor(menor);
+		dto.setPromedio(promedio);
+		dto.setEstado(estado);
 		
-		int promedio=((n1+n2+n3+n4)-min)/3;
-		
-	    
-		 if(promedio>=14){
-		     
-		     bean.setEstado("APROBADO");
-		     
-		 }else{
-		     
-		     bean.setEstado("DESAPROBADO");
-		 }
-		
-		 
-		 bean.setNotasEliminadas(String.valueOf(min)); 
-		 bean.setNotas(String.valueOf(n1)+"-"+String.valueOf(n2)+"-"+String.valueOf(n3)+"-"+String.valueOf(n4));
-		 bean.setPromedio(String.valueOf(promedio));
-		
-
-	    
-	    return bean;
+		return dto;
 	}
 
 }
