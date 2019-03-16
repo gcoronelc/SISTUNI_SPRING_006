@@ -1,0 +1,21 @@
+TAREA 02
+========================================
+Hacer un proyecto con Spring MVC para 
+calcular el promedio de un estuciante
+y su condición a aprobado o desaprobado.
+
+Son 4 notas y se promedian las tres mejores.
+
+Aprueba si su promedio es mayor o igual a 14.
+
+Datos de Entrada:
+-------------------------
+- Cuatro notas
+
+
+Reporte
+-------------------------
+- Cuatro notas 
+- Nota eliminada
+- promedio
+- condicion
