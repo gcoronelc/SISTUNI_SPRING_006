@@ -1,0 +1,23 @@
+
+SELECT CHR_CLIECODIGO, VCH_CLIEPATERNO, VCH_CLIEMATERNO,
+VCH_CLIENOMBRE, CHR_CLIEDNI, VCH_CLIECIUDAD, VCH_CLIEDIRECCION,
+VCH_CLIETELEFONO, VCH_CLIEEMAIL
+
+
+
+
+
+private String codigo     ;
+private String paterno    ;
+private String materno    ;
+private String nombre     ;
+private String dni        ;
+private String ciudad     ;
+private String direccion  ;
+private String telefono   ;
+private String email      ;
+
+
+
+
+

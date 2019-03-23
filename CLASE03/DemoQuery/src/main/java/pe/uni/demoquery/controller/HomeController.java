@@ -21,7 +21,9 @@ public class HomeController {
 		model.addAttribute("CantCuentas", eurekaService.getCantCuentas());
 		model.addAttribute("SaldoSoles", eurekaService.getSaldo("01"));
 		model.addAttribute("SaldoDolares", eurekaService.getSaldo("02"));
-		model.addAttribute("Cliente", eurekaService.getCliente("00001"));
+		model.addAttribute("Cliente", eurekaService.getCliente3("00001"));
+		
+		model.addAttribute("ListaClientes", eurekaService.getClientes3("A"));
 				
 		return "home";
 	}
