@@ -9,7 +9,9 @@
   <h3>Ven que quiero tu plata</h3>
   
   <p>Cantidad de cuentas: ${CantCuentas}</p>
-  <p>Saldo: ${Saldo}</p>
+  <p>Saldo Soles: ${SaldoSoles}</p>
+  <p>Saldo Dolares: ${SaldoDolares}</p>
+  <p>Cliente: ${Cliente.codigo} ${Cliente.paterno}</p>
 
 </body>
 </html>

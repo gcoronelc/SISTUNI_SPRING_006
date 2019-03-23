@@ -19,8 +19,10 @@ public class HomeController {
 	public String home(Model model) {
 		
 		model.addAttribute("CantCuentas", eurekaService.getCantCuentas());
-		model.addAttribute("Saldo", eurekaService.getSaldo());
-		
+		model.addAttribute("SaldoSoles", eurekaService.getSaldo("01"));
+		model.addAttribute("SaldoDolares", eurekaService.getSaldo("02"));
+		model.addAttribute("Cliente", eurekaService.getCliente("00001"));
+				
 		return "home";
 	}
 	
