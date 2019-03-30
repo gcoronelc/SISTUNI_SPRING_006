@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.google.gson.Gson;
 
+import pe.uni.demoquery.dto.ClienteDto;
+import pe.uni.demoquery.service.EGCCUtil;
 import pe.uni.demoquery.service.EurekaService;
 
 
@@ -68,5 +70,54 @@ public class HomeController {
 		return respJSON;
 	}
 	
+	@RequestMapping(value = "/ConsultarClientesResp2.htm", method = RequestMethod.GET)
+	public @ResponseBody String ConsultarClientesResp2(
+			@RequestParam("codigo") String codigo, 
+			@RequestParam("paterno") String paterno, 
+			@RequestParam("materno") String materno, 
+			@RequestParam("nombre") String nombre
+			) {	
+		
+		// Proceso
+		List<Map<String, Object>> lista = eurekaService.getClientes(codigo, paterno, materno, nombre);
+		String cadena = EGCCUtil.ListMapToString(lista);
+		return cadena;
+	}
+	
+	@RequestMapping(value = "/ConsultarClientesResp3.htm", method = RequestMethod.GET)
+	public @ResponseBody String ConsultarClientesResp3(
+			@RequestParam("codigo") String codigo, 
+			@RequestParam("paterno") String paterno, 
+			@RequestParam("materno") String materno, 
+			@RequestParam("nombre") String nombre
+			) {	
+		
+		// Proceso
+		List<ClienteDto> lista = eurekaService.getClientes2(codigo, paterno, materno, nombre);
+		String cadena = EGCCUtil.ListClientesToString(lista);
+		return cadena;
+	}
+	
+	
+	@RequestMapping(value = "/Retiro.htm", method = RequestMethod.GET)
+	public String Retiro() {	
+		return "Retiro";
+	}
+	
+	@RequestMapping(value = "/RetiroProc.htm", method = RequestMethod.POST)
+	public @ResponseBody String RetiroProc(
+			@RequestParam("cuenta") String cuenta,
+			@RequestParam("importe") Double importe,
+			@RequestParam("clave") String clave			
+			) {	
+		String respuesta = "OK";
+		try {
+			this.eurekaService.procRetiro(cuenta, importe, clave, "0003");
+			respuesta = "Proceso ejecutado correctamente.";
+		} catch (Exception e) {
+			respuesta = e.getMessage();
+		}
+		return respuesta;
+	}
 	
 }

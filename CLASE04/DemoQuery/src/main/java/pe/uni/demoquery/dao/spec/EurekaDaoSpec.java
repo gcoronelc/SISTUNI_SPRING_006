@@ -28,7 +28,18 @@ public interface EurekaDaoSpec {
 	
 	public List<Map<String,Object>> getClientes3( String paterno );
 	
+	
 	public List<Map<String,Object>> getClientes( 
 			String codigo, String paterno, String materno, String nombre );
+	
+	
+	public List<ClienteDto> getClientes2( 
+			String codigo, String paterno, String materno, String nombre );
+	
+	
+	public void procRetiro( 
+			String cuenta, Double importe, String clave, String empleado );
+	
+	
 	
 }

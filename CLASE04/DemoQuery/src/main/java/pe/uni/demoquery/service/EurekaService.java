@@ -55,4 +55,18 @@ public class EurekaService {
 		return eurekaDao.getClientes(codigo, paterno, materno, nombre);
 	}
 	
+	
+	public List<ClienteDto> getClientes2( 
+			String codigo, String paterno, String materno, String nombre )
+	{
+		List<ClienteDto> lista;
+		lista = eurekaDao.getClientes2(codigo, paterno, materno, nombre);
+		
+		return lista;
+	}
+	
+	public void procRetiro(String cuenta, Double importe, String clave, String empleado){
+		eurekaDao.procRetiro(cuenta, importe, clave, empleado);
+	}
+	
 }
