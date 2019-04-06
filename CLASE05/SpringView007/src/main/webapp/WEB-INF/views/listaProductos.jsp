@@ -16,6 +16,10 @@
 	<h1>LISTA DE PRODUCTOS</h1>
 
 	<h3><a href="./exportExcel">Export to Excel</a></h3>
+	
+	<h3><a href="./exportExcel2">Export to Excel 2</a></h3>
+	
+	<h3><a href="./verExcel03" target="_blank">Export to Excel 3</a></h3>
 
 	<table border="1px" cellpadding="8px" id="DATOS">
 		<tr>
