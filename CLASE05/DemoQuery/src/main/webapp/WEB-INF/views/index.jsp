@@ -13,6 +13,7 @@
   <div class="egcc_page">
     <div class="egcc_header">
       <h1>EUREKA BANK</h1>
+      <p>Usuario: ${usuario}</p>
     </div>
     <div class="egcc_nav">
       <jsp:include page="menu.jsp"></jsp:include>    

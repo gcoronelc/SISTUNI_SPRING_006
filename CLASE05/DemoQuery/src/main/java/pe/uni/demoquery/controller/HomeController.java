@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.SessionAttributes;
 
 import com.google.gson.Gson;
 
@@ -22,6 +23,7 @@ import pe.uni.demoquery.service.EurekaService;
 
 
 @Controller
+@SessionAttributes({"usuario"})
 public class HomeController {
 	
 	@Autowired
@@ -48,8 +50,16 @@ public class HomeController {
 		model.addAttribute("ListaClientes", eurekaService.getClientes3("A"));
 		*/
 		
+		return "home";
+	}
+	
+	
+	@RequestMapping(value = "/Home.htm", method = RequestMethod.POST)
+	public String homeProceso( @RequestParam("nombre") String nombre, Model model) {	
+		model.addAttribute("usuario", nombre);
 		return "index";
 	}
+	
 	
 	
 	@RequestMapping(value = "/ConsultarClientes.htm", method = RequestMethod.GET)

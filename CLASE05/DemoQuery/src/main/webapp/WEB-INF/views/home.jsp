@@ -1,29 +1,23 @@
-<%@page import="java.util.Map"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page session="false" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-	<title>Home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
 </head>
 <body>
-  <h1>EUREKA BANK</h1>
-  <h3>Ven que quiero tu plata</h3>
-  
-  <p>Cantidad de cuentas: ${CantCuentas}</p>
-  <p>Saldo Soles: ${SaldoSoles}</p>
-  <p>Saldo Dolares: ${SaldoDolares}</p>
-  <p>Cliente: ${Cliente.codigo} ${Cliente.paterno} ${Cliente.materno}</p>
 
-  <%  
-  Map<String,Object> rec = (Map<String,Object>)request.getAttribute("Cliente");
-  %>
-  <%= rec.get("paterno") %>
+  <h1>BIENVENIDO</h1>
   
-  <p>--------------------</p>
-  <ul>
-  <c:forEach items="${ListaClientes}" var="r">
-    <li>${r.codigo} ${r.paterno} ${r.materno}</li>  
-  </c:forEach>
-  </ul>
+  <form method="post" action="Home.htm">
+  
+    <label>Nombre:</label>
+    <input type="text" name="nombre">
+    <input type="submit" value="Ingresar"> 
+  
+  </form>
+
+
 </body>
 </html>

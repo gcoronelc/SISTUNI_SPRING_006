@@ -9,6 +9,7 @@
 <body>
   
   <h1>REGISTRAR RETIRO</h1>
+  <p>${usuario} no te lleves toda la plata</p>
   
   <div id="DivRespuesta" style="color:red;display: none;"></div>
   

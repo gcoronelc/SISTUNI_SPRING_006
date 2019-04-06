@@ -1,0 +1,286 @@
+/** nuevos stilos**/
+.mt-5 {
+	margin-top: 5px;
+}
+.mb-5 {
+	margin-bottom: 5px;
+}
+.mt-10 {
+	margin-top: 10px;
+}
+.mb-10 {
+	margin-bottom: 10px;
+}
+.mt-20 {
+	margin-top: 20px;
+}
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+.mb-20 {
+	margin-bottom: 20px !important;
+}
+
+.centro {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.m-icon {
+	margin-left: 5px;
+    margin-right: 5px;
+}
+
+.margin-m-10{
+	margin: -10px !important;
+}
+
+.fondo-gris {
+	border-radius: 6px;
+	background-color: #f1f1f1;
+}
+
+.logo-adquirer {
+	border-radius: 6px;
+	border: 1px solid #C7C7C7;
+}
+
+.btn-trans {
+	background-color: #f5f5f500;
+    border-color: #ffffff00;
+}
+
+.btn-regresar {
+	margin-top: 10px;
+    margin-right: 12px;
+}
+
+.float-right{
+	float:right !important;
+}
+.minHeightField{
+	min-height:55px;
+}
+.dis-none{
+	display: none !important;
+}
+
+.mh-a{
+	min-height: auto !important;
+}
+.height-auto{
+	height: auto !important;
+}
+
+/* Tabs */
+.tabs-container .panel-body {
+  background: #fff;
+  border: 1px solid #e7eaec;
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+}
+.tabs-container .nav-tabs > li.active > a,
+.tabs-container .nav-tabs > li.active > a:hover,
+.tabs-container .nav-tabs > li.active > a:focus {
+  border: 1px solid #e7eaec;
+  border-bottom-color: transparent;
+  background-color: #fff;
+}
+.tabs-container .nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+.tabs-container .tab-pane .panel-body {
+  border-top: none;
+}
+.tabs-container .nav-tabs > li.active > a,
+.tabs-container .nav-tabs > li.active > a:hover,
+.tabs-container .nav-tabs > li.active > a:focus {
+  border: 1px solid #e7eaec;
+  border-bottom-color: transparent;
+}
+.tabs-container .nav-tabs {
+  border-bottom: 1px solid #e7eaec;
+}
+.tabs-container .tab-pane .panel-body {
+  border-top: none;
+}
+.tabs-container .tabs-left .tab-pane .panel-body,
+.tabs-container .tabs-right .tab-pane .panel-body {
+  border-top: 1px solid #e7eaec;
+}
+.tabs-container .tabs-below > .nav-tabs,
+.tabs-container .tabs-right > .nav-tabs,
+.tabs-container .tabs-left > .nav-tabs {
+  border-bottom: 0;
+}
+.tabs-container .tabs-left .panel-body {
+  position: static;
+}
+.tabs-container .tabs-left > .nav-tabs,
+.tabs-container .tabs-right > .nav-tabs {
+  width: 20%;
+}
+.tabs-container .tabs-left .panel-body {
+  width: 80%;
+  margin-left: 20%;
+}
+.tabs-container .tabs-right .panel-body {
+  width: 80%;
+  margin-right: 20%;
+}
+.tabs-container .tab-content > .tab-pane,
+.tabs-container .pill-content > .pill-pane {
+  display: none;
+}
+.tabs-container .tab-content > .active,
+.tabs-container .pill-content > .active {
+  display: block;
+}
+.tabs-container .tabs-below > .nav-tabs {
+  border-top: 1px solid #e7eaec;
+}
+.tabs-container .tabs-below > .nav-tabs > li {
+  margin-top: -1px;
+  margin-bottom: 0;
+}
+.tabs-container .tabs-below > .nav-tabs > li > a {
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+}
+.tabs-container .tabs-below > .nav-tabs > li > a:hover,
+.tabs-container .tabs-below > .nav-tabs > li > a:focus {
+  border-top-color: #e7eaec;
+  border-bottom-color: transparent;
+}
+.tabs-container .tabs-left > .nav-tabs > li,
+.tabs-container .tabs-right > .nav-tabs > li {
+  float: none;
+}
+.tabs-container .tabs-left > .nav-tabs > li > a,
+.tabs-container .tabs-right > .nav-tabs > li > a {
+  min-width: 124px;
+  margin-right: 0;
+  margin-bottom: 3px;
+}
+.tabs-container .tabs-left > .nav-tabs {
+  float: left;
+  margin-right: 19px;
+}
+.tabs-container .tabs-left > .nav-tabs > li > a {
+  margin-right: -1px;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+.tabs-container .tabs-left > .nav-tabs a.active,
+.tabs-container .tabs-left > .nav-tabs a.active:hover,
+.tabs-container .tabs-left > .nav-tabs a.active:focus {
+  border-color: #e7eaec transparent #e7eaec #e7eaec;
+}
+.tabs-container .tabs-right > .nav-tabs {
+  float: right;
+  margin-left: 19px;
+}
+.tabs-container .tabs-right > .nav-tabs > li > a {
+  margin-left: -1px;
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+}
+.tabs-container .tabs-right > .nav-tabs a.active,
+.tabs-container .tabs-right > .nav-tabs a.active:hover,
+.tabs-container .tabs-right > .nav-tabs a.active:focus {
+  border-color: #e7eaec #e7eaec #e7eaec transparent;
+  z-index: 1;
+}
+.tabs-container .tabs-right > .nav-tabs li {
+  z-index: 1;
+}
+.nav-tabs .nav-link:not(.active):focus,
+.nav-tabs .nav-link:not(.active):hover {
+  border-color: transparent;
+}
+@media (max-width: 767px) {
+  .tabs-container .nav-tabs > li {
+    float: none !important;
+  }
+  .tabs-container .nav-tabs > li.active > a {
+    border-bottom: 1px solid #e7eaec !important;
+    margin: 0;
+  }
+}
+/* Validation plugin */
+label.error {
+  color: #cc5965;
+  display: inline-block;
+  margin-left: 5px;
+}
+.form-control.error {
+  border: 1px dotted #cc5965;
+}
+
+
+label.required:after {
+  content:" (*)";
+  color:red;
+}
+
+.input-line{
+	border: 0;
+    background-image: linear-gradient(#26B99A,#159f84),linear-gradient(#d2d2d2,#d2d2d2);
+    background-size: 0 2px,100% 1px;
+    background-repeat: no-repeat;
+    background-position: center bottom,center calc(100% - 1px);
+    background-color: transparent;
+    transition: background 0s ease-out;
+    float: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+.input-line[disabled], .input-line[readonly], fieldset[disabled] .input-line {
+
+    background-image: none !important;
+    border-bottom: 1px dotted #d2d2d2 !important;
+    background-color: #fff0 !important;
+}
+.img-preview {
+	width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+
+.sec-img {
+	padding-right: 11px;
+    padding-left: 11px;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn-file {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
